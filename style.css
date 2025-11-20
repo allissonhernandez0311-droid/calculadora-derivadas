@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: 'Poppins', Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.calculadora {
+    background-color: #222;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    width: 300px;
+    text-align: center;
+    color: #fff;
+}
+
+.icono {
+    width: 70px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 5px cyan);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.calculadora h2 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #333;
+    color: #0ff;
+    box-shadow: inset 0 0 5px rgba(0,255,255,0.12);
+}
+
+#resultado {
+    min-height: 28px;
+    margin-bottom: 14px;
+    padding: 6px 8px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 6px;
+    text-align: right;
+    color: #ffd;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 52px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #444;
+    color: #fff;
+    transition: 0.12s;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+button:hover { transform: scale(1.03); }
+
+button.op {
+    background-color: #ff8c00;
+}
+
+button.igual {
+    background-color: #00b894;
+    grid-row: span 2;
+}
+
+button.derivar {
+    background-color: #007bff;
+}
